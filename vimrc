@@ -32,6 +32,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'matze/vim-move'
 "Slim syntax
 Plugin 'slim-template/vim-slim.git'
+"Multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
