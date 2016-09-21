@@ -41,10 +41,12 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 " Optional:
 Plugin 'honza/vim-snippets'
-"es6
-Plugin 'isRuslan/vim-es6'
+"JS
+Plugin 'pangloss/vim-javascript'
 "jsx
 Plugin 'mxw/vim-jsx'
+"Matchtagalways
+Plugin 'Valloric/MatchTagAlways'
 
 
 " All of your Plugins must be added before the following line
@@ -110,10 +112,13 @@ let g:airline_theme='papercolor'
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_always_populate_loc_list = 0
 "let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_open = 0
 "let g:syntastic_check_on_wq = 0
+"syntastic passive
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 "NO SWAP FILE WARNING
 set shortmess+=A
@@ -162,3 +167,12 @@ let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+
+let g:mta_filetypes = {
+  \ 'html' : 1,
+  \ 'xhtml' : 1,
+  \ 'xml' : 1,
+  \ 'jinja' : 1,
+  \ 'javascript' : 1,
+  \ 'jsx' : 1,
+\}
