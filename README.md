@@ -10,3 +10,6 @@ This is my personal setup for vim, mostly used for web dev.
 * auto-pairs
 * neocomplete
 * vim-move
+
+If airline is not displaying properly, install powerline fonts:
+[Powerline Fonts](https://github.com/powerline/fonts.git)

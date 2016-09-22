@@ -47,8 +47,12 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 "Matchtagalways
 Plugin 'Valloric/MatchTagAlways'
+<<<<<<< HEAD
 "Coffee
 Plugin 'kchmck/vim-coffee-script'
+=======
+
+>>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,7 +60,11 @@ call vundle#end()            " required
 "set color scheme"
 colo papercolor
 
+<<<<<<< HEAD
 "syntax highlight
+=======
+"syntax highlight"
+>>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
 set background=dark
 syntax on
 filetype plugin indent on
@@ -105,7 +113,11 @@ let g:airline#extensions#tabline#enabled = 1
 "airline theme
 let g:airline_powerline_fonts = 1
 set laststatus=2
+<<<<<<< HEAD
 let g:airline_theme='durant'
+=======
+let g:airline_theme='papercolor'
+>>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
 
 
 "Syntastic settings
@@ -126,8 +138,11 @@ set shortmess+=A
 
 "Show pattern matches
 set hlsearch
+<<<<<<< HEAD
 "Incremental search
 set incsearch
+=======
+>>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
@@ -144,6 +159,7 @@ if &t_Co == 8 && $TERM !~# '^linux'
 endif
 
 " Plug Settings {
+<<<<<<< HEAD
 " neocomplete {
     " <TAB>: completion.
     inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -151,6 +167,8 @@ endif
     inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
     inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
   " }
+=======
+>>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
   " CtrlP {
     " Open file menu
     nnoremap <Leader>o :CtrlP<CR>
