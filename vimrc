@@ -47,6 +47,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 "Matchtagalways
 Plugin 'Valloric/MatchTagAlways'
+"Coffee
+Plugin 'kchmck/vim-coffee-script'
 
 
 " All of your Plugins must be added before the following line
@@ -54,6 +56,7 @@ call vundle#end()            " required
 
 "set color scheme"
 colo papercolor
+
 
 "syntax highlight"
 set background=dark
@@ -104,7 +107,8 @@ let g:airline#extensions#tabline#enabled = 1
 "airline theme
 let g:airline_powerline_fonts = 1
 set laststatus=2
-let g:airline_theme='papercolor'
+let g:airline_theme='durant'
+
 
 
 "Syntastic settings
@@ -125,6 +129,9 @@ set shortmess+=A
 
 "Show pattern matches
 set hlsearch
+"Incremental search
+set incsearch
+
 " Press Space to turn off highlighting and clear any message already displayed.
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
@@ -141,6 +148,14 @@ if &t_Co == 8 && $TERM !~# '^linux'
 endif
 
 " Plug Settings {
+" neocomplete {
+    " <TAB>: completion.
+    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+    " <C-h>, <BS>: close popup and delete backword char.
+    inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+    inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+  " }
+
   " CtrlP {
     " Open file menu
     nnoremap <Leader>o :CtrlP<CR>
