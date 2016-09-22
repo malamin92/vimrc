@@ -176,3 +176,6 @@ let g:mta_filetypes = {
   \ 'javascript' : 1,
   \ 'jsx' : 1,
 \}
+
+"smart indenting
+set smartindent
