@@ -1,9 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-<<<<<<< HEAD
-let g:netrw_dirhist_1='/Users/malamin'
-let g:netrw_dirhist_2='/Users/malamin/.vim/vim-colorschemes'
-=======
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/malamin/.rvm/rubies/ruby-2.2.0'
 let g:netrw_dirhist_2='/Users/malamin/Desktop/RoR/testapp'
->>>>>>> 709327dd39328327ea0e043b5d3a3bba534f994c
+let g:netrw_dirhist_3='/Users/malamin/Desktop/JS/todo-no-flux'
+let g:netrw_dirhist_4='/Users/malamin/Desktop/JS'

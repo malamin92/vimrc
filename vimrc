@@ -20,6 +20,8 @@ Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'scrooloose/syntastic'
 "GIT
 Plugin 'tpope/vim-fugitive'
+"GIT Gutter
+Plugin 'airblade/vim-gitgutter'
 "Autocomplete
 Plugin 'Shougo/neocomplete.vim'
 "RAILS
@@ -101,6 +103,8 @@ autocmd Filetype eruby setlocal sts=4 ts=4 sw=4 noexpandtab
 "case insensitive searches"
 set smartcase
 set ignorecase
+"smart indenting
+set smartindent
 
 "display all buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -192,5 +196,3 @@ let g:mta_filetypes = {
   \ 'jsx' : 1,
 \}
 
-"smart indenting
-set smartindent
