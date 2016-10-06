@@ -36,6 +36,8 @@ Plugin 'matze/vim-move'
 Plugin 'slim-template/vim-slim.git'
 "Multiple cursors
 Plugin 'terryma/vim-multiple-cursors'
+"Emmet
+Plugin 'mattn/emmet-vim'
 
 "snipmate
 Plugin 'MarcWeber/vim-addon-mw-utils'
