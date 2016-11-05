@@ -69,3 +69,6 @@ PluginInstall
 PluginList
 PluginUpdate
 filetype
+sasslint
+autocomplete
+scss

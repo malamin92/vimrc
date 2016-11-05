@@ -53,7 +53,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'Valloric/MatchTagAlways'
 "Coffee
 Plugin 'kchmck/vim-coffee-script'
-
+Plugin 'cakebaker/scss-syntax.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,17 +118,19 @@ let g:airline_theme='durant'
 
 
 "Syntastic settings
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 0
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 0
-"let g:syntastic_check_on_wq = 0
-"syntastic passive
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
-nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
+
+"autocomplete scss
+set omnifunc=csscomplete#CompleteCSS
+set ft=scss.css
 
 "NO SWAP FILE WARNING
 set shortmess+=A

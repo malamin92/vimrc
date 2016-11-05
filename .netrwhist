@@ -1,6 +1,16 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/malamin/.rvm/rubies/ruby-2.2.0'
-let g:netrw_dirhist_2='/Users/malamin/Desktop/RoR/testapp'
-let g:netrw_dirhist_3='/Users/malamin/Desktop/JS/todo-no-flux'
-let g:netrw_dirhist_4='/Users/malamin/Desktop/JS'
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v156)
+"   /Users/malamin/Desktop/javascript_projects/portfolio_site
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../
+./
+.git/
+app/
+assets/
+node_modules/
+.DS_Store
+package.json
+webpack.config.js
