@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 "Autocomplete
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'ternjs/tern_for_vim'
 "RAILS
 Plugin 'tpope/vim-rails'
 "Surround
