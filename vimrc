@@ -60,7 +60,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 call vundle#end()            " required
 
 "set color scheme"
-colo onedark
+colo papercolor
 
 
 "syntax highlight"
