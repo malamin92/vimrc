@@ -127,7 +127,15 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
-
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_eruby_checkers = ['ruby']
+let g:syntastic_slim_checkers = ['slimrb']
+let g:syntastic_html_checkers = ['tiby']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_coffee_checkers = ['coffee']
+let g:syntastic_handlebars_checkers = ['handlebars']
 "autocomplete scss
 set omnifunc=csscomplete#CompleteCSS
 set ft=scss.css
