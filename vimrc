@@ -210,6 +210,7 @@ let g:mta_filetypes = {
   \ 'jsx' : 1,
 \}
 
+"clear conflict when using multiple-cursors with neo-complete
 function! Multiple_cursors_before()
     exe 'NeoCompleteLock'
     echo 'Disabled autocomplete'
