@@ -96,12 +96,12 @@ setlocal spell spelllang=en_us
 
 "tab spaces
 "general
-set softtabstop=2 tabstop=2 shiftwidth=2 expandtab
+set softtabstop=4 tabstop=4 shiftwidth=4 expandtab
 
 "for view files"
-autocmd Filetype html setlocal sts=4 ts=4 sw=4 noexpandtab
-autocmd Filetype slim setlocal sts=4 ts=4 sw=4 noexpandtab
-autocmd Filetype eruby setlocal sts=4 ts=4 sw=4 noexpandtab
+autocmd Filetype html setlocal sts=4 ts=4 sw=4 expandtab
+autocmd Filetype slim setlocal sts=4 ts=4 sw=4 expandtab
+autocmd Filetype eruby setlocal sts=4 ts=4 sw=4 expandtab
 
 "case insensitive searches"
 set smartcase
@@ -210,3 +210,12 @@ let g:mta_filetypes = {
   \ 'jsx' : 1,
 \}
 
+function! Multiple_cursors_before()
+    exe 'NeoCompleteLock'
+    echo 'Disabled autocomplete'
+endfunction
+
+function! Multiple_cursors_after()
+    exe 'NeoCompleteUnlock'
+    echo 'Enabled autocomplete'
+endfunction
