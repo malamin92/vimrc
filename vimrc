@@ -220,3 +220,7 @@ function! Multiple_cursors_after()
     exe 'NeoCompleteUnlock'
     echo 'Enabled autocomplete'
 endfunction
+
+let &t_SI = "\<Esc>]12;yellow\x7" 
+let &t_SR = "\<Esc>]12;red\x7" 
+let &t_EI = "\<Esc>]12;blue\x7"
